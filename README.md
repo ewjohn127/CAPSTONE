@@ -1,6 +1,6 @@
 # Predicting Building Energy Use
 
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNew_York_City&psig=AOvVaw3QlKWZrPaBrZdYuYoakwSv&ust=1638908967180000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPDP_uiB0PQCFQAAAAAdAAAAABAD" alt="NYC Downtown Manhattan Skyline seen from Paulus Hook - Fred Hsu on en.wikipedia - Own work" class="center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/NYC_Downtown_Manhattan_Skyline_seen_from_Paulus_Hook_2019-12-20_IMG_7347_FRD_%28cropped%29.jpg/1600px-NYC_Downtown_Manhattan_Skyline_seen_from_Paulus_Hook_2019-12-20_IMG_7347_FRD_%28cropped%29.jpg" alt="NYC Downtown Manhattan Skyline seen from Paulus Hook - Fred Hsu on en.wikipedia - Own work" class="center">
 
 ## Project Understanding
 

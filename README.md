@@ -20,15 +20,17 @@ The primary workload with this project ends up being the data cleaning. The targ
 
 need to be identified and either fixed or removed from consideration. A couple examples of the data cleaning are shown below.
 
-* Fixing Missing Entries:
+* Fixing Missing Entries - Filling in missing information is extremely important to get an accurate representation.
 
 <img src="images/bldng_1353_compare.png" class="center">
 
-* Fixing Erratic Readings:
+* Fixing Erratic Readings - Many of the large erratic spikes up or down are eliminated from the data set to improve model performance:
 
 <img src="images/building_raw_clean_compare.png" class="center">
 
-The original goal was to use all observations of this dataset as the train data and submit predictions on the kaggle competition test data as per the instructions of the competition. Due to running out of time, in an attempt to get a performance metric, a late train/test split is performed. Several operations have been done prior to this train test split (i.e. imputing) so data leakage is present and the results are more or less meaningless. This project ends up being an exercise in data cleaning and data understanding. The work for this project can be seen in this [notebook](./appendix/kaggle_multicity_weather_building_energy_model.ipynb).
+In addition to data cleaning, calendar features are created such as day of the week and holiday. For many building types this is a significant feature in determining hourly energy use.
+
+The first goal is to use all observations of this dataset as the train data and submit predictions on the kaggle competition test data as per the instructions of the competition. Due to running out of time, in an attempt to get a performance metric, a late train/test split is performed. Several data operations are done prior to the train test split (i.e. imputing) so data leakage is present and the model performance results are more or less meaningless. This project ends up being an exercise in data cleaning and data understanding. A linear regression model is used for predictions. The work for this project can be seen in this [notebook](./appendix/kaggle_multicity_weather_building_energy_model.ipynb).
 
 Next, a simpler approach is taken to produce a working model for predicting building energy usage. Instead of looking at hourly information, data is summed up after data cleaning by building to produce unique building observations for the year. This method produces interpretable results and the work for this can be seen in this [notebook](./appendix/kaggle_multicity_building_energy_model.ipynb).
 
@@ -51,7 +53,7 @@ Buildings account for 76% of all electricity use in the United States. This tran
 * ventilation
 * refrigeration
 
-<img src="images/piechart.png" class="center">
+<img src="images/piechart.png" class="center" width="400" height="400" >
 
 New York State Energy Plan:
 
